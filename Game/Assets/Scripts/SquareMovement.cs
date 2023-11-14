@@ -4,7 +4,7 @@ public class SquareMovement : MonoBehaviour
 {
     [Header("Movement variables")]
     public float moveSpeed;         // constant movement speed
-    public float xmax;              // x position limit that triggers reset leftwards
+    public float xmin;              // x position limit that triggers reset leftwards
     public Vector3 respawnPosition; // position object will reset to
   
     void Update()
@@ -14,7 +14,7 @@ public class SquareMovement : MonoBehaviour
         transform.position -= Vector3.left * moveSpeed * Time.deltaTime;
       
         // if you get too far, reset to respawn position
-        if (transform.position.x < xmax)
+        if (transform.position.x < xmin)
         {
             transform.position = respawnPosition;
         }
