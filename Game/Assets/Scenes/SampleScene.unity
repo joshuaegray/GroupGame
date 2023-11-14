@@ -302,17 +302,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 5190838640206312308, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190838640206312308, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190838640206312308, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5190838640206312309, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5190838640206312309, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16440463
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5190838640206312309, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44270828
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5190838640206312309, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
       propertyPath: m_LocalPosition.z

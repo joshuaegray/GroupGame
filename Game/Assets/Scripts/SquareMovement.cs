@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SquareMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [Header("Movement variables")]
+    public float moveSpeed;         // constant movement speed
+    public float xmin;              // x position limit that triggers reset leftwards
+    public Vector3 respawnPosition; // position object will reset to
+  
     void Update()
     {
-        
+        // Add a left direction vector to your position every frame
+        // Time.deltaTime keeps the moveSpeed at a constant game units per second speed
+        transform.position -= Vector3.left * moveSpeed * Time.deltaTime;
+      
+        // if you get too far, reset to respawn position
+        if (transform.position.x < xmin)
+        {
+            transform.position = respawnPosition;
+        }
     }
 }
