@@ -11,7 +11,7 @@ public class SquareMovement : MonoBehaviour
     {
         // Add a left direction vector to your position every frame
         // Time.deltaTime keeps the moveSpeed at a constant game units per second speed
-        transform.position -= Vector3.left * moveSpeed * Time.deltaTime;
+        transform.position -= Vector3.right * moveSpeed * Time.deltaTime;
       
         // if you get too far, reset to respawn position
         if (transform.position.x < xmin)
