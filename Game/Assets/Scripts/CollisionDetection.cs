@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
-    public float rayLength = 1;
+    private float rayLength = 1;
 
     public LayerMask physicsLayersToSense;
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class CollisionDetection : MonoBehaviour
     {
         if (Physics2D.Raycast(transform.position, transform.right, rayLength, physicsLayersToSense))
         {
-            Destroy(this, 0);
+            Destroy(this.gameObject, 0);
         }
         
     }
