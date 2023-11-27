@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         
-        if (mousePos.x - 1 < transform.position.x )
+        if (mousePos.x - 1 < transform.position.x)
         {
             playerX -= movementSpeed * Time.deltaTime;
         }
