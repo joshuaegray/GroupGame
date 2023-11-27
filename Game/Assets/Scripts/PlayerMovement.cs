@@ -26,28 +26,36 @@ public class PlayerMovement : MonoBehaviour
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-        if (mousePos.y > transform.position.y )
+        if (!(playerY > mousePos.y - 1 && playerY < mousePos.y + 1))
         {
-            playerY += movementSpeed * Time.deltaTime;
-        }
+            if (mousePos.y > transform.position.y)
+            {
+                playerY += movementSpeed * Time.deltaTime;
+            }
+            
+            if (mousePos.y < transform.position.y ){
         
-        if (mousePos.x - 1 > transform.position.x)
+                playerY -= movementSpeed * Time.deltaTime;
+            }
+        }
+
+
+
+
+
+        if (!(playerX > mousePos.x - 1 && playerX < mousePos.x + 1))
         {
-            playerX += movementSpeed * Time.deltaTime;
+            if (mousePos.x - 1 > transform.position.x)
+            {
+                playerX += movementSpeed * Time.deltaTime;
+            }
+
+            if (mousePos.x - 1 < transform.position.x)
+            {
+                playerX -= movementSpeed * Time.deltaTime;
+            }
         }
-        
-        
-        if (mousePos.y < transform.position.y )
-        {
-            playerY -= movementSpeed * Time.deltaTime;
-        }
-        
-        
-        if (mousePos.x - 1 < transform.position.x )
-        {
-            playerX -= movementSpeed * Time.deltaTime;
-        }
-        
+
         transform.position = new Vector3( playerX ,playerY,  0);
     
 
