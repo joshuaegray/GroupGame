@@ -10253,6 +10253,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8951792630424411368, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951792630424411368, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 2388815331754516905, guid: b2352a5f57ef661498f0ac23024d065f, type: 3}
+    - target: {fileID: 8951792630424411368, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
+      propertyPath: enemyPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 5190838640206312307, guid: b703095ec3dd52c4ea6743c2665e1110, type: 3}
     - target: {fileID: 8951792630424411369, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: m_RootOrder
       value: 2
