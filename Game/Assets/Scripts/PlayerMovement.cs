@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Vector3 mousePos;
+
     //controls the player y
     private float playerY;
     private float playerX;
     private Camera cam;
+    public string levelName;
     public float movementSpeed;
+
+    public LayerMask physicsLayersToSense;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +38,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 playerY += movementSpeed * Time.deltaTime;
             }
-            
-            if (mousePos.y < transform.position.y ){
-        
+
+            if (mousePos.y < transform.position.y)
+            {
+
                 playerY -= movementSpeed * Time.deltaTime;
             }
         }
@@ -57,6 +64,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+
+
+        if (Physics2D.Raycast(transform.position, transform.right, 1, physicsLayersToSense))
+        {
+            SceneManager.LoadScene(levelName);
+        }
+
+        
+        
         transform.position = new Vector3(playerX, playerY, 0);
 
     }
