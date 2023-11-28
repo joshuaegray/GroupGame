@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class SpawnEnemy : MonoBehaviour
 {
 	public GameObject[] enemyPrefabs;
-	private int stage;
 	
 	public float startingInterval, minimumInterval, intervalPercentDampening;
 	public float minX, maxX, minY, maxY;
@@ -20,7 +19,6 @@ public class SpawnEnemy : MonoBehaviour
 
    void Start()
    {
-	   stage = SceneManager.GetActiveScene().buildIndex;
 	   interval = startingInterval;
 	   StartCoroutine(SpawnBalls());
    }
