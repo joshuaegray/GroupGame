@@ -2869,6 +2869,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5207718987987349918, guid: 3f149b333edb27847b87a868f1bcc21a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207718987987349918, guid: 3f149b333edb27847b87a868f1bcc21a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1476778563
+      objectReference: {fileID: 0}
     - target: {fileID: 6311433347763576515, guid: 3f149b333edb27847b87a868f1bcc21a, type: 3}
       propertyPath: m_Name
       value: Burger
@@ -3631,6 +3639,14 @@ PrefabInstance:
     - target: {fileID: 6584277003074898445, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437771488768747211, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437771488768747211, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1476778563
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
