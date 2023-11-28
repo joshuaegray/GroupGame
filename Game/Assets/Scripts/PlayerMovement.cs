@@ -56,21 +56,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        
-        
-        if (mousePos.y < transform.position.y )
-        {
-            playerY -= movementSpeed * Time.deltaTime;
-        }
-        
-        
-        if (mousePos.x - 1 < transform.position.x)
-        {
-            playerX -= movementSpeed * Time.deltaTime;
-        }
-        
-        transform.position = new Vector3( playerX ,playerY,  0);
-    
 
-}
+        transform.position = new Vector3(playerX, playerY, 0);
+
+    }
 }
