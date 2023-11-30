@@ -41,7 +41,6 @@ public class SpawnEnemy : MonoBehaviour
 	   while (true)
 	   {
 		   //int enemyNum = Random.Range(0, enemyPrefabs.Length-1);
-		   yield return new WaitForSeconds(spawningSpeed);
 
 
 		   for (int i = 0; i < levelLayout.Count; i++)
@@ -49,6 +48,8 @@ public class SpawnEnemy : MonoBehaviour
 			   Vector3 spawnPos = new Vector3(5, levelLayout.ElementAt(i).Key, 0f);
 			   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
 		   }
+		   
+		   yield return new WaitForSeconds(spawningSpeed);
 		   
 	   }
 
