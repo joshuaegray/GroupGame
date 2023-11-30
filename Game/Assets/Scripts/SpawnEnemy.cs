@@ -1,4 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,41 +10,51 @@ using UnityEngine.SceneManagement;
 public class SpawnEnemy : MonoBehaviour
 {
 	public GameObject[] enemyPrefabs;
-	
-	public float startingInterval, minimumInterval, intervalPercentDampening;
-	public float minX, maxX, minY, maxY;
+	public float[] positions;
 
-	[SerializeField] private float interval;
 
-	public float spawnLimit;
-	
-	
-	
+	public int spawningSpeed;
 	
 
-   void Start()
+	private IDictionary<float, GameObject> levelLayout = new Dictionary<float, GameObject>();
+
+
+
+	void Start()
    {
-	   interval = startingInterval;
+	   
+	   for (int i = 0; i < enemyPrefabs.Length; i++)
+	   {
+		   levelLayout.Add(positions[i], enemyPrefabs[i]);
+	   }
 	   StartCoroutine(SpawnBalls());
-   }
-  
 
+   }
+
+
+	
+	
+
+	
    IEnumerator SpawnBalls()
    {
 	   while (true)
 	   {
-		   int enemyNum = Random.Range(0, enemyPrefabs.Length-1);
-		   yield return new WaitForSeconds(interval);
-		   //Debug.Log("Updating now: " + interval);
+		   //int enemyNum = Random.Range(0, enemyPrefabs.Length-1);
 
-		   if ((interval - minimumInterval) * (intervalPercentDampening) + minimumInterval > spawnLimit)
+
+		   for (int i = 0; i < levelLayout.Count; i++)
 		   {
-				interval = (interval - minimumInterval) * intervalPercentDampening + minimumInterval;
+			   Vector3 spawnPos = new Vector3(5, levelLayout.ElementAt(i).Key, 0f);
+			   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
 		   }
-		   float randX = Random.Range(minX, maxX);
-		   float randY = Random.Range(minY, maxY);
-		   Vector3 spawnPos = new Vector3(randX, randY, 0f);
-		   Instantiate(enemyPrefabs[enemyNum], spawnPos, Quaternion.identity);
+		   
+		   yield return new WaitForSeconds(spawningSpeed);
+		   
 	   }
+
    }
+   
+   
+	 
 }

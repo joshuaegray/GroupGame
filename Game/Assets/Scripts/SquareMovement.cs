@@ -16,7 +16,8 @@ public class SquareMovement : MonoBehaviour
         // if you get too far, reset to respawn position
         if (transform.position.x < xmin)
         {
-            transform.position = respawnPosition;
+            //transform.position = respawnPosition;
+            Destroy(this.gameObject, 0 );
         }
     }
 }

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public string levelName;
     public float movementSpeed;
 
-    public LayerMask physicsLayersToSense;
+    public LayerMask targetLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (Physics2D.Raycast(transform.position, transform.right, 1, physicsLayersToSense))
+        if (Physics2D.Raycast(transform.position, transform.right, 1, targetLayer))
         {
             SceneManager.LoadScene(levelName);
         }
