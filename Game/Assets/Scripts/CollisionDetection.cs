@@ -19,8 +19,23 @@ public class CollisionDetection : MonoBehaviour
     {
         if (Physics2D.Raycast(transform.position, transform.right, rayLength, physicsLayersToSense))
         {
-            Destroy(this.gameObject, 0);
+            Destroy(this.gameObject, 1);
         }
         
     }
 }
+
+
+/*
+     public string deathTag;
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag(deathTag))
+        {
+            Debug.Log("Player dying, hit: " + other.gameObject.name);
+            Destroy(this.gameObject, 1);
+        }
+ 
+ 
+ */
