@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,22 +6,14 @@ using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
-    private float rayLength = 1;
+    public string deathTag;
 
-    public LayerMask physicsLayersToSense;
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Physics2D.Raycast(transform.position, transform.right, rayLength, physicsLayersToSense))
+        if (other.gameObject.CompareTag(deathTag))
         {
-            Destroy(this.gameObject, 0);
+            Debug.Log("Player dying, hit: " + other.gameObject.name);
+            Destroy(this.gameObject, 1);
         }
-        
     }
 }

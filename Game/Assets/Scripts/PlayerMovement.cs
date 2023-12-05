@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,10 +17,12 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask targetLayer;
 
+    private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;
         playerY = transform.position.y;
         playerX = transform.position.x;
@@ -72,8 +75,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         
-        
-        transform.position = new Vector3(playerX, playerY, 0);
 
+    }
+
+    public void FixedUpdate()
+    {
+      // rb.MovePosition(rb.position + new Vector2(playerX, playerY));
+       rb.position = new Vector2(playerX, playerY);
     }
 }
