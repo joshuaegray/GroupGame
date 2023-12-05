@@ -17,12 +17,13 @@ public class SpawnEnemy : MonoBehaviour
 	
 
 	private IDictionary<float, GameObject> levelLayout = new Dictionary<float, GameObject>();
+	private int i;
 
 
 
 	void Start()
-   {
-	   
+	{
+		i = 0; 
 	   for (int i = 0; i < enemyPrefabs.Length; i++)
 	   {
 		   levelLayout.Add(positions[i], enemyPrefabs[i]);
@@ -41,12 +42,14 @@ public class SpawnEnemy : MonoBehaviour
 	   while (true)
 	   {
 		   //int enemyNum = Random.Range(0, enemyPrefabs.Length-1);
+		
 
-
-		   for (int i = 0; i < levelLayout.Count; i++)
+		   Vector3 spawnPos = new Vector3(5, levelLayout.ElementAt(i).Key, 0f);
+		   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
+		   i++;
+		   if (i == enemyPrefabs.Length)
 		   {
-			   Vector3 spawnPos = new Vector3(5, levelLayout.ElementAt(i).Key, 0f);
-			   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
+			   i = 0;
 		   }
 		   
 		   yield return new WaitForSeconds(spawningSpeed);
