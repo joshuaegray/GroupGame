@@ -1004,6 +1004,10 @@ PrefabInstance:
       value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 174088358435339082, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: deathTag
+      value: Projectiles
+      objectReference: {fileID: 0}
+    - target: {fileID: 174088358435339082, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: physicsLayersToSense.m_Bits
       value: 128
       objectReference: {fileID: 0}
@@ -1078,11 +1082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.16
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.z
