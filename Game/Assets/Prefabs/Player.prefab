@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1476778563
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1c6c0029e42e0dd4f81db47116e7a62b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,11 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b506801c0ba564892decd7843d97bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  movementSpeed: 0
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  levelName: Level 1
+  movementSpeed: 5
 --- !u!114 &174088358435339082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbd39c45217d0e4ab848c79023f8e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTag: 
+  physicsLayersToSense:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!61 &-9141726554095169492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.27, y: 0.61}
   m_EdgeRadius: 0
 --- !u!50 &-211754794002969293
 Rigidbody2D:
