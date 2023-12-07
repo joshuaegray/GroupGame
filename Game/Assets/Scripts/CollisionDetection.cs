@@ -19,7 +19,7 @@ public class CollisionDetection : MonoBehaviour
     {
         if (Physics2D.Raycast(transform.position, transform.right, rayLength, physicsLayersToSense))
         {
-            Destroy(this.gameObject, 1);
+            Destroy(this.gameObject, 0);
         }
         
     }

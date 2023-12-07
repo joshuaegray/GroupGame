@@ -13,7 +13,7 @@ public class SpawnEnemy : MonoBehaviour
 	public float[] positions;
 
 
-	public int spawningSpeed;
+	public float spawningSpeed;
 	
 
 	private IDictionary<float, GameObject> levelLayout = new Dictionary<float, GameObject>();
@@ -44,7 +44,7 @@ public class SpawnEnemy : MonoBehaviour
 		   //int enemyNum = Random.Range(0, enemyPrefabs.Length-1);
 		
 
-		   Vector3 spawnPos = new Vector3(5, levelLayout.ElementAt(i).Key, 0f);
+		   Vector3 spawnPos = new Vector3(transform.position.x, levelLayout.ElementAt(i).Key, 0f);
 		   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
 		   i++;
 		   if (i == enemyPrefabs.Length)
