@@ -991,6 +991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 174088358435339082, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: deathTag
+      value: death
+      objectReference: {fileID: 0}
     - target: {fileID: 2977518929023022895, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_RootOrder
       value: 3

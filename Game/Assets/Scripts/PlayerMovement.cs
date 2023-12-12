@@ -26,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-        currMovement = (mousePos - transform.position).normalized * movementSpeed;
+       
+             currMovement = (mousePos - transform.position).normalized * movementSpeed;
         
     }
     
