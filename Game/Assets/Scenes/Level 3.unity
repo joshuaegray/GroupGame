@@ -8156,16 +8156,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1598944812
+--- !u!1001 &1809037557
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4083796575103305405, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
-      propertyPath: levelName
-      value: Level 5
+    - target: {fileID: -9141726554095169492, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.18753743
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141726554095169492, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.29813582
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141726554095169492, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.008902099
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141726554095169492, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.016660422
       objectReference: {fileID: 0}
     - target: {fileID: 2977518929023022895, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_RootOrder
@@ -8173,11 +8185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2977518929023022895, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.67
+      value: -8.686
       objectReference: {fileID: 0}
     - target: {fileID: 2977518929023022895, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: -0.0359
       objectReference: {fileID: 0}
     - target: {fileID: 2977518929023022895, guid: ded1775ffa588a74a817c53bb88d1ad7, type: 3}
       propertyPath: m_LocalPosition.z
