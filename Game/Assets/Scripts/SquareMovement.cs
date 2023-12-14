@@ -1,9 +1,14 @@
+using System;
 using UnityEngine;
 
 public class SquareMovement : MonoBehaviour
 {
     [Header("Movement variables")]
-    public float moveSpeed;         // constant movement speed
+    public float moveSpeedx;
+
+    public float moveSpeedy;
+
+    // constant movement speed
     public float xmin;              // x position limit that triggers reset rightwards
     public Vector3 respawnPosition; // position object will reset to
   
@@ -11,13 +16,19 @@ public class SquareMovement : MonoBehaviour
     {
         // Add a left direction vector to your position every frame
         // Time.deltaTime keeps the moveSpeed at a constant game units per second speed
-        transform.position -= Vector3.right * moveSpeed * Time.deltaTime;
+        transform.position += Vector3.right * moveSpeedx * Time.deltaTime;
+        transform.position += Vector3.up*moveSpeedy* Time.deltaTime;
       
         // if you get too far, reset to respawn position
-        if (transform.position.x < xmin)
-        {
+        
             //transform.position = respawnPosition;
-            Destroy(this.gameObject, 0 );
-        }
+        Destroy(this.gameObject, 5 );
+        
+    }
+
+    public void setMovement(float x, float y)
+    {
+        moveSpeedx = x;
+        moveSpeedy = y;
     }
 }

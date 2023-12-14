@@ -14,8 +14,9 @@ public class SpawnEnemy : MonoBehaviour
 
 
 	public float spawningSpeed;
-	
 
+	public float XSpeed;
+	public float YSpeed;
 	private IDictionary<float, GameObject> levelLayout = new Dictionary<float, GameObject>();
 	private int i;
 
@@ -45,7 +46,16 @@ public class SpawnEnemy : MonoBehaviour
 		
 
 		   Vector3 spawnPos = new Vector3(transform.position.x, levelLayout.ElementAt(i).Key, 0f);
-		   Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
+		   GameObject obj = Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
+		   SquareMovement objScript = obj.GetComponent<SquareMovement>();
+		   objScript.setMovement(XSpeed, YSpeed);
+		  /*
+		   TestingMovement objScript = obj.GetComponent<TestingMovement>();
+		   if (objScript != null)
+		   {
+			   objScript.SetVals()
+		   }
+		   */
 		   i++;
 		   if (i == enemyPrefabs.Length)
 		   {
