@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 mousePos;
     private Camera cam;
     private Rigidbody2D rb;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
         mousePos.z = 0f;
        
              currMovement = (mousePos - transform.position).normalized * movementSpeed;
+             
+            
+             transform.up = mousePos - transform.position;
+
+
         
     }
     
