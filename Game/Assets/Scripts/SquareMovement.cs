@@ -22,7 +22,7 @@ public class SquareMovement : MonoBehaviour
         // if you get too far, reset to respawn position
         
             //transform.position = respawnPosition;
-        Destroy(this.gameObject, 5 );
+        Destroy(this.gameObject, 7 );
         
     }
 
