@@ -11,6 +11,7 @@ public class SquareMovement : MonoBehaviour
     // constant movement speed
     public float xmin;              // x position limit that triggers reset rightwards
     public Vector3 respawnPosition; // position object will reset to
+    private float destroyTime;
   
     void Update()
     {
@@ -22,13 +23,14 @@ public class SquareMovement : MonoBehaviour
         // if you get too far, reset to respawn position
         
             //transform.position = respawnPosition;
-        Destroy(this.gameObject, 7 );
+        Destroy(this.gameObject, destroyTime );
         
     }
 
-    public void setMovement(float x, float y)
+    public void setMovement(float x, float y, float time)
     {
         moveSpeedx = x;
         moveSpeedy = y;
+        destroyTime = time;
     }
 }
