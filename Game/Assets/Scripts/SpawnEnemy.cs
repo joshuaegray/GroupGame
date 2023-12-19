@@ -19,6 +19,7 @@ public class SpawnEnemy : MonoBehaviour
 	public float YSpeed;
 	private IDictionary<float, GameObject> levelLayout = new Dictionary<float, GameObject>();
 	private int i;
+	public float destroyTime;
 
 
 
@@ -48,7 +49,7 @@ public class SpawnEnemy : MonoBehaviour
 		   Vector3 spawnPos = new Vector3(transform.position.x, levelLayout.ElementAt(i).Key, 0f);
 		   GameObject obj = Instantiate(levelLayout.ElementAt(i).Value, spawnPos, Quaternion.identity);
 		   SquareMovement objScript = obj.GetComponent<SquareMovement>();
-		   objScript.setMovement(XSpeed, YSpeed);
+		   objScript.setMovement(XSpeed, YSpeed, destroyTime);
 		  /*
 		   TestingMovement objScript = obj.GetComponent<TestingMovement>();
 		   if (objScript != null)
