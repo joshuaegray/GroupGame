@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: positions.Array.data[0]
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
