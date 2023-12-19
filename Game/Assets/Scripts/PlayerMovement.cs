@@ -27,11 +27,17 @@ public class PlayerMovement : MonoBehaviour
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-       
-             currMovement = (mousePos - transform.position).normalized * movementSpeed;
-             
+
+      
+            currMovement = (mousePos - transform.position).normalized * movementSpeed;
+            transform.up = mousePos - transform.position;
             
-             transform.up = mousePos - transform.position;
+
+          
+            
+
+
+        
 
 
         
@@ -41,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
     {
       // rb.MovePosition(rb.position + new Vector2(playerX, playerY));
       // rb.position = new Vector2(playerX, playerY);
+      
       rb.velocity = currMovement;
     }
 
