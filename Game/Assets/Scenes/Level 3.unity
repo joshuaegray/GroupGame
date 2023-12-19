@@ -384,7 +384,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: XSpeed
-      value: -5
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: destroyTime
@@ -392,7 +392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: spawningSpeed
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7285856429729306863, guid: 4c319450fb90f1640b8feac54f2c0abf, type: 3}
       propertyPath: positions.Array.size
