@@ -19,6 +19,7 @@ public class SquareMovement : MonoBehaviour
         // Time.deltaTime keeps the moveSpeed at a constant game units per second speed
         transform.position += Vector3.right * moveSpeedx * Time.deltaTime;
         transform.position += Vector3.up*moveSpeedy* Time.deltaTime;
+        transform.right = Vector3.right * moveSpeedx + Vector3.up * moveSpeedy;
       
         // if you get too far, reset to respawn position
         
