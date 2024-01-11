@@ -6100,6 +6100,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1262824680168258966, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708682758078622919, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708682758078622919, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708682758078622919, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: ShapeModule.m_Rotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778688836247986250, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3458687062304751914, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407474982829739480, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.12967241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407474982829739480, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.12967241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407474982829739480, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8773585
+      objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6151,6 +6187,10 @@ PrefabInstance:
     - target: {fileID: 6153264168035337781, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_TagString
       value: Finish
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929226046889392928, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
