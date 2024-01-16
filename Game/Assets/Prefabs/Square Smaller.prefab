@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5190838640206312308}
   - component: {fileID: 5717758468301706101}
   - component: {fileID: 2904191689321114776}
+  - component: {fileID: 7648261394345681790}
   m_Layer: 7
   m_Name: Square Smaller
   m_TagString: death
@@ -98,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd5608e3539b20429bc5c0266401198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 9
+  moveSpeedx: 0
+  moveSpeedy: 0
   xmin: -9
   respawnPosition: {x: 9, y: 3, z: 0}
 --- !u!58 &2904191689321114776
@@ -114,6 +116,27 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024648888, y: 0.052974302}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.10510013
+--- !u!95 &7648261394345681790
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5190838640206312307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
