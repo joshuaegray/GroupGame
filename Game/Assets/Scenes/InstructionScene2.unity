@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4745098, g: 0.19215688, b: 0.42721704, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -439,11 +439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: 7.36
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: 5294072141956847291, guid: 376f14d9b3e4d6b4eacb08ceaaa3d884, type: 3}
       propertyPath: m_LocalPosition.z
