@@ -28,19 +28,33 @@ public class PlayerMovement : MonoBehaviour
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
 
-      
+
+        float distance = (mousePos-transform.position).magnitude;
+        
+        if( distance >= .51)
+        {
             currMovement = (mousePos - transform.position).normalized * movementSpeed;
             transform.up = mousePos - transform.position;
-            
+        }
 
-          
-            
+        else
+        {
+           // currMovement = Vector2.zero;
+           currMovement *= .95f; 
+        }
+    
+                
+      
 
 
-        
 
 
-        
+
+
+
+
+
+
     }
     
     public void FixedUpdate()
