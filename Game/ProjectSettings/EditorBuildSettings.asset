@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/InstructionScene.unity
     guid: 4fee69695e98ad54d951737f7f9cb276
   - enabled: 1
-    path: Assets/Scenes/InstructionScreen3.unity
+    path: Assets/Scenes/InstructionScene3.unity
     guid: 956f7e2ee200f474c887338c38c18ecf
   - enabled: 1
     path: Assets/Scenes/Level 4.unity
